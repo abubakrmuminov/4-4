@@ -61,7 +61,9 @@ export function splitSecretMessage(message) {
 // Input: const delay = 2000;
 // Output: 2 soniyadan soвЂng "Launch!" konsolda chiqadi
 export function launchSpaceship(delay) {
-  
+  setTimeout(() => {
+    console.log("Launch!");
+  }, delay);
 }
 
 // ==============================================

@@ -41,9 +41,10 @@
 // 6-mashq \\
 // ======= \\
 
-// const message = "salomdunyo"
-// import { splitSecretMessage } from "./tasks.js";
-// console.log(splitSecretMessage(message))
+const delay = 2000;
+import { launchSpaceship } from "./tasks.js";
+launchSpaceship(delay)
+
 
 // ======= \\
 // 7-mashq \\

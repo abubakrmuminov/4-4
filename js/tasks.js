@@ -17,7 +17,7 @@ export function calculateSecretCode(code) {
 // Input: const data = { name: "Zafarjon", age: 20, hobby: "coding" };
 // Output: ["name", "age", "hobby"]
 export function getComputerKeys(data) {
-  return Object.keys(data)
+  return Object.keys(data);
 }
 
 // ==============================================
@@ -28,7 +28,7 @@ export function getComputerKeys(data) {
 // Input: const menu = { coffee: 15000, tea: 10000, cake: 25000 };
 // Output: [15000, 10000, 25000]
 export function getMenuPrices(menu) {
-  return Object.values(menu)
+  return Object.values(menu);
 }
 
 // ==============================================
@@ -39,7 +39,7 @@ export function getMenuPrices(menu) {
 // Input: const team = { leader: "Hamidulloh", hacker: "Shohrux" };
 // Output: [["leader", "Hamidulloh"], ["hacker", "Shohrux"]]
 export function getTeamRoles(team) {
-  return Object.entries(team)
+  return Object.entries(team);
 }
 
 // ==============================================
@@ -50,7 +50,7 @@ export function getTeamRoles(team) {
 // Input: const message = "salomdunyo";
 // Output: ["s", "a", "l"]
 export function splitSecretMessage(message) {
-  return message.split("", 3)
+  return message.split("", 3);
 }
 
 // ==============================================
@@ -74,7 +74,9 @@ export function launchSpaceship(delay) {
 // Input: const interval = 1000;
 // Output: Har 1 soniyada "Tik-tak" konsolda chiqadi
 export function startRobotClock(interval) {
-  // setInterval() dan foydalaning
+  setInterval(() => {
+    console.log("tik-tak");
+  }, interval);
 }
 
 // ==============================================
@@ -85,7 +87,7 @@ export function startRobotClock(interval) {
 // Input: const nestedList = [[1, 2], [3, [4, 5]]];
 // Output: [1, 2, 3, 4, 5]
 export function flattenList(nestedList) {
-  // flat() dan foydalaning
+  return nestedList.flat(Infinity);
 }
 
 // ==============================================
@@ -96,7 +98,7 @@ export function flattenList(nestedList) {
 // Input: const entries = [["name", "AbdulmoвЂmin"], ["role", "hacker"]];
 // Output: { name: "AbdulmoвЂmin", role: "hacker" }
 export function createDatabase(entries) {
-  // Object.fromEntries() dan foydalaning
+  return Object.fromEntries(entries);
 }
 
 // ==============================================
@@ -107,7 +109,7 @@ export function createDatabase(entries) {
 // Input: const words = ["hello", "world"];
 // Output: ["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]
 export function flattenWords(words) {
-  // flatMap() dan foydalaning
+  return words.flatMap((words) => words.split(""));
 }
 
 // ==============================================
@@ -118,7 +120,7 @@ export function flattenWords(words) {
 // Input: const calc = "10 - 4 * 2";
 // Output: 2
 export function cosmicCalculator(calc) {
-  // eval() dan foydalaning
+  return eval(calc);
 }
 
 // ==============================================
@@ -129,7 +131,7 @@ export function cosmicCalculator(calc) {
 // Input: const journal = { day1: "Met a robot", day2: "Flew to Mars" };
 // Output: ["day1", "day2"]
 export function getJournalKeys(journal) {
-  // Object.keys() dan foydalaning
+  return Object.keys(journal);
 }
 
 // ==============================================
@@ -140,7 +142,7 @@ export function getJournalKeys(journal) {
 // Input: const expenses = { fuel: 5000, food: 3000 };
 // Output: [5000, 3000]
 export function getExpenses(expenses) {
-  // Object.values() dan foydalaning
+  return Object.values(expenses);
 }
 
 // ==============================================
@@ -151,7 +153,7 @@ export function getExpenses(expenses) {
 // Input: const squad = { captain: "Zafarjon", navigator: "Asilbek" };
 // Output: [["captain", "Zafarjon"], ["navigator", "Asilbek"]]
 export function getSquadRoles(squad) {
-  // Object.entries() dan foydalaning
+  return Object.entries(squad);
 }
 
 // ==============================================
@@ -162,7 +164,7 @@ export function getSquadRoles(squad) {
 // Input: const signal = "koinot123";
 // Output: ["k", "o", "i", "n", "o"]
 export function splitCosmicSignal(signal) {
-  // split("", 5) dan foydalaning
+  return signal.split("", 5);
 }
 
 // ==============================================
@@ -173,7 +175,9 @@ export function splitCosmicSignal(signal) {
 // Input: const delay = 3000;
 // Output: 3 soniyadan soвЂng "Hello, Robot!" konsolda chiqadi
 export function greetRobot(delay) {
-  // setTimeout() dan foydalaning
+  setTimeout(() => {
+    console.log("Hello, Robot!");
+  }, delay);
 }
 
 // ==============================================
@@ -184,7 +188,9 @@ export function greetRobot(delay) {
 // Input: const interval = 2000;
 // Output: Har 2 soniyada "Signal sent!" konsolda chiqadi
 export function sendCosmicSignal(interval) {
-  // setInterval() dan foydalaning
+  setInterval(() => {
+    console.log("Signal sent!");
+  }, interval);
 }
 
 // ==============================================
@@ -195,7 +201,7 @@ export function sendCosmicSignal(interval) {
 // Input: const secretList = [[1, [2, 3]], [4]];
 // Output: [1, 2, 3, 4]
 export function flattenSecretList(secretList) {
-  // flat() dan foydalaning
+  return secretList.flat(Infinity);
 }
 
 // ==============================================
@@ -206,7 +212,7 @@ export function flattenSecretList(secretList) {
 // Input: const data = [["id", 1], ["name", "Muhammadhasan"]];
 // Output: { id: 1, name: "Muhammadhasan" }
 export function createSecretObject(data) {
-  // Object.fromEntries() dan foydalaning
+  return Object.fromEntries(data);
 }
 
 // ==============================================
@@ -217,5 +223,5 @@ export function createSecretObject(data) {
 // Input: const cosmicWords = ["star", "moon"];
 // Output: ["s", "t", "a", "r", "m", "o", "o", "n"]
 export function flattenCosmicWords(cosmicWords) {
-  // flatMap() dan foydalaning
+  return cosmicWords.flatMap(word => word.split(""));
 }
